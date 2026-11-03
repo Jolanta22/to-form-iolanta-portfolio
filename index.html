@@ -60,6 +60,32 @@
     .work-legend { position:absolute; inset:auto 0 0; padding:52px 18px 17px; background:linear-gradient(transparent,rgba(10,16,14,.9)); }
     .work-legend h3 { margin:4px 0 0; color:var(--paper); }
     .work-legend small { color:#dce4df; }
+    .work.cover { min-height:300px; position:relative; overflow:hidden; isolation:isolate; padding:20px; color:#fff; border-color:rgba(255,255,255,.32); background:#281944; box-shadow:inset 0 0 0 1px rgba(255,255,255,.1); }
+    .work.cover:before,.work.cover:after { content:""; position:absolute; pointer-events:none; z-index:-1; }
+    .work.cover:before { width:188px; height:188px; border-radius:50%; top:-65px; right:-48px; background:radial-gradient(circle at 30% 26%,#fff 0 3%,transparent 4%),conic-gradient(from 30deg,#ffcf7b,#ff6074,#d54dff,#55e9ff,#ffe574,#ffcf7b); filter:blur(.2px); opacity:.93; box-shadow:inset 14px 12px 31px rgba(255,255,255,.46),inset -16px -22px 29px rgba(45,0,101,.35); animation:float-orb 9s ease-in-out infinite; }
+    .work.cover:after { inset:0; background:linear-gradient(145deg,rgba(8,5,24,.02),rgba(8,5,24,.8)); }
+    .work.cover > * { position:relative; z-index:1; }
+    .work.cover .empty { color:rgba(255,255,255,.75); }
+    .work.cover h3 { color:#fff; margin-top:auto; font-size:31px; text-shadow:0 2px 17px rgba(15,4,35,.42); }
+    .work.cover small { color:rgba(255,255,255,.86); }
+    .cover-quest { background:radial-gradient(circle at 73% 21%,#eaffff 0 1%,transparent 1.6%),radial-gradient(circle at 44% 66%,#c9f75e 0 1%,transparent 1.4%),radial-gradient(circle at 13% 26%,#fff 0 1%,transparent 1.5%),linear-gradient(140deg,#120b35,#3c186c 55%,#c41e8b) !important; }
+    .cover-quest:after { background-image:linear-gradient(30deg,transparent 47%,rgba(240,225,255,.28) 48% 49%,transparent 50%),linear-gradient(150deg,transparent 47%,rgba(240,225,255,.18) 48% 49%,transparent 50%),linear-gradient(145deg,rgba(7,3,27,.03),rgba(7,3,27,.8)) !important; background-size:74px 74px,74px 74px,auto !important; }
+    .cover-code { background:linear-gradient(135deg,#01c8c7 0%,#1684da 36%,#8e36de 69%,#ff6e9d 100%) !important; }
+    .cover-code:before { width:250px !important; height:250px !important; top:58px !important; right:-75px !important; border-radius:45% 55% 39% 61% / 55% 38% 62% 45% !important; background:conic-gradient(from 125deg,#ff915c,#fff18a,#50ffe1,#8e38ff,#ff4fa6,#ff915c) !important; }
+    .cover-code:after { background:radial-gradient(circle at 15% 18%,rgba(255,255,255,.35),transparent 30%),linear-gradient(145deg,transparent,rgba(23,0,81,.54)) !important; }
+    .cover-matrix { background:radial-gradient(circle at 50% 38%,rgba(244,187,97,.75),transparent 1.5%),radial-gradient(circle at 20% 23%,rgba(255,255,255,.75),transparent 1%),radial-gradient(circle at 80% 73%,rgba(255,255,255,.55),transparent 1%),linear-gradient(140deg,#050e2b,#1e174e 61%,#5f216b) !important; }
+    .cover-matrix:before { width:275px !important; height:275px !important; top:12px !important; right:-20px !important; border:1px solid rgba(243,200,111,.64); background:transparent !important; box-shadow:0 0 0 40px transparent,inset 0 0 0 1px rgba(243,200,111,.23) !important; border-radius:50% !important; }
+    .cover-matrix:after { background:linear-gradient(30deg,transparent 49%,rgba(246,195,94,.25) 50% 50.7%,transparent 51%),linear-gradient(150deg,transparent 49%,rgba(246,195,94,.20) 50% 50.7%,transparent 51%),linear-gradient(145deg,transparent,rgba(5,4,25,.75)) !important; background-size:70px 70px,70px 70px,auto !important; }
+    .cover-taro { background:linear-gradient(135deg,#271026,#7e1d45 49%,#d86b4e) !important; }
+    .cover-taro:before { border-radius:7px !important; width:115px !important; height:170px !important; top:35px !important; right:42px !important; background:linear-gradient(145deg,#f7d283,#b64045) !important; border:7px double rgba(52,11,42,.84); box-shadow:30px 24px 0 -5px #eb8a5d,-31px 31px 0 -5px #58204a !important; transform:rotate(13deg); }
+    .cover-runes { background:linear-gradient(135deg,#081d28,#205763 59%,#58bdb0) !important; }
+    .cover-runes:before { width:180px !important; height:180px !important; top:30px !important; right:10px !important; background:radial-gradient(circle,#d7fff6 0 4%,transparent 5%),conic-gradient(from 60deg,#76f6e6,#195760,#99dbd2,#76f6e6) !important; clip-path:polygon(50% 0,61% 31%,92% 20%,72% 48%,100% 67%,65% 67%,56% 100%,43% 68%,10% 82%,29% 51%,0 30%,40% 32%) !important; border-radius:0 !important; box-shadow:none !important; }
+    .cover-group { background:linear-gradient(135deg,#fb7b67,#ffb24b 54%,#ffe878) !important; }
+    .cover-group:before { width:175px !important; height:175px !important; background:radial-gradient(circle at 30% 30%,#fff3c4,#ff685e 42%,#da3654 70%) !important; top:32px !important; right:27px !important; box-shadow:inset 15px 12px 31px rgba(255,255,255,.46),inset -16px -22px 29px rgba(118,17,48,.30) !important; }
+    .cover-purpose { background:linear-gradient(135deg,#0b3834,#237568 48%,#c1a04d) !important; }
+    .cover-purpose:before { width:245px !important; height:245px !important; border-radius:50% !important; top:48px !important; right:-40px !important; background:repeating-radial-gradient(circle,rgba(255,231,144,.89) 0 1px,transparent 2px 19px),conic-gradient(#ffd97d,#1cc39c,#ffd97d) !important; box-shadow:none !important; }
+    .cover-money { background:linear-gradient(135deg,#2b1238,#7e285b 51%,#f06d4d) !important; }
+    .cover-money:before { width:230px !important; height:230px !important; top:24px !important; right:-15px !important; background:conic-gradient(from 20deg,#ffc764,#fe7063,#c947c9,#6a55fa,#ffc764) !important; border-radius:38% 62% 42% 58% / 61% 38% 62% 39% !important; }
     .work .empty { color:#52605a; font:500 11px "DM Mono",monospace; text-transform:uppercase; letter-spacing:.05em; }
     .work h3 { margin:0; max-width:200px; font:500 28px/1 "Playfair Display",serif; letter-spacing:-.05em; }
     .work small { font:500 11px "DM Mono",monospace; }
@@ -128,14 +154,14 @@
         <article class="work visual"><img src="matrix-money-offline.jpg" alt="Лендинг очного курса по Матрице судьбы"><div class="work-legend"><span class="empty">образовательный лендинг</span><h3>Где мои<br>деньги? Офлайн</h3><small>оффер · программа · запись</small></div></article>
         <article class="work visual"><img src="matrix-money-online.jpg" alt="Лендинг онлайн курса по Матрице судьбы"><div class="work-legend"><span class="empty">образовательный лендинг</span><h3>Где мои<br>деньги? Онлайн</h3><small>оффер · программа · запись</small></div></article>
         <a class="work visual" href="https://t-igri.vercel.app" target="_blank" rel="noopener"><img src="transformational-games.jpg" alt="Страница трансформационных игр"><div class="work-legend"><span class="empty">платформа</span><h3>Трансформационные<br>игры</h3><small>структура · интерфейс · запуск ↗</small></div></a>
-        <a class="work" href="https://sparkling-destiny-quest.lovable.app" target="_blank" rel="noopener"><span class="empty">интерактивный сервис</span><h3>Квест<br>по судьбе</h3><small>Lovable · веб‑приложение ↗</small></a>
-        <a class="work" href="https://kod-iolanta.ilanakubastro22.chatgpt.site/?lang=ru" target="_blank" rel="noopener"><span class="empty">персональный проект</span><h3>Код<br>Иоланты</h3><small>упаковка · страница · AI ↗</small></a>
-        <a class="work" href="https://destiny-matrix-unlocked.lovable.app/online" target="_blank" rel="noopener"><span class="empty">онлайн‑сервис</span><h3>Матрица<br>судьбы</h3><small>калькулятор · UX · результат ↗</small></a>
-        <a class="work" href="https://taro-practical-course.vercel.app/" target="_blank" rel="noopener"><span class="empty">образовательный продукт</span><h3>Практический<br>курс Таро</h3><small>лендинг · программа · CTA ↗</small></a>
-        <a class="work" href="https://runy-practical-course.vercel.app" target="_blank" rel="noopener"><span class="empty">образовательный продукт</span><h3>Практический<br>курс Рун</h3><small>лендинг · программа · CTA ↗</small></a>
-        <a class="work" href="https://gruppa-rosta.vercel.app" target="_blank" rel="noopener"><span class="empty">групповая программа</span><h3>Группа<br>роста</h3><small>оффер · структура · запись ↗</small></a>
-        <a class="work" href="https://prednaznachenie-i-dengi.vercel.app/" target="_blank" rel="noopener"><span class="empty">тематический лендинг</span><h3>Предназначение<br>и деньги</h3><small>смысл · визуал · воронка ↗</small></a>
-        <a class="work" href="https://denezhniy-kod-very.vercel.app/" target="_blank" rel="noopener"><span class="empty">продуктовая страница</span><h3>Денежный<br>код Веры</h3><small>оффер · лендинг · заявка ↗</small></a>
+        <a class="work cover cover-quest" href="https://sparkling-destiny-quest.lovable.app" target="_blank" rel="noopener"><span class="empty">интерактивный сервис</span><h3>Квест<br>по судьбе</h3><small>Lovable · веб‑приложение ↗</small></a>
+        <a class="work cover cover-code" href="https://kod-iolanta.ilanakubastro22.chatgpt.site/?lang=ru" target="_blank" rel="noopener"><span class="empty">персональный проект</span><h3>Код<br>Иоланты</h3><small>упаковка · страница · AI ↗</small></a>
+        <a class="work cover cover-matrix" href="https://destiny-matrix-unlocked.lovable.app/online" target="_blank" rel="noopener"><span class="empty">онлайн‑сервис</span><h3>Матрица<br>судьбы</h3><small>калькулятор · UX · результат ↗</small></a>
+        <a class="work cover cover-taro" href="https://taro-practical-course.vercel.app/" target="_blank" rel="noopener"><span class="empty">образовательный продукт</span><h3>Практический<br>курс Таро</h3><small>лендинг · программа · CTA ↗</small></a>
+        <a class="work cover cover-runes" href="https://runy-practical-course.vercel.app" target="_blank" rel="noopener"><span class="empty">образовательный продукт</span><h3>Практический<br>курс Рун</h3><small>лендинг · программа · CTA ↗</small></a>
+        <a class="work cover cover-group" href="https://gruppa-rosta.vercel.app" target="_blank" rel="noopener"><span class="empty">групповая программа</span><h3>Группа<br>роста</h3><small>оффер · структура · запись ↗</small></a>
+        <a class="work cover cover-purpose" href="https://prednaznachenie-i-dengi.vercel.app/" target="_blank" rel="noopener"><span class="empty">тематический лендинг</span><h3>Предназначение<br>и деньги</h3><small>смысл · визуал · воронка ↗</small></a>
+        <a class="work cover cover-money" href="https://denezhniy-kod-very.vercel.app/" target="_blank" rel="noopener"><span class="empty">продуктовая страница</span><h3>Денежный<br>код Веры</h3><small>оффер · лендинг · заявка ↗</small></a>
       </div>
     </section>
 
